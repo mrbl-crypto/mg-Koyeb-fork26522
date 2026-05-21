@@ -1,6 +1,6 @@
 # 🚀 my-Koyeb: 2026 基于 Koyeb + Cloudflare Argo 隧道的 VLESS 安全单兵节点
 
-# [详细视频教程](https://one.dash.cloudflare.com/)
+# [纯小白详细视频教程](https://youtu.be/q-PvkWsU7AA/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Platform: Koyeb](https://img.shields.io/badge/Platform-Koyeb-blue)
