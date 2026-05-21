@@ -2,12 +2,12 @@ name: Build and Push Docker Image to GHCR
 
 on:
   push:
-    branches: [ "main" ]
-  workflow_dispatch:
+    branches: [ "main", "master" ] # 🔥 完美兼容不同用户的默认主分支命名，提交代码自动触发
+  workflow_dispatch: # 🔥 激活手动一键打包的“大按钮”
 
 permissions:
   contents: read
-  packages: write
+  packages: write # 赋予往 GitHub Container Registry 写入镜像的最高权限
 
 env:
   REGISTRY: ghcr.io
