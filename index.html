@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Earth, Our Home | 我们的地球，我们的家园</title>
+    <style>
+        /* 全局样式 / Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Microsoft YaHei";
+        }
+
+        body {
+            background-color: #f4f7f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        /* 导航栏 / Navigation */
+        header {
+            background-color: #2e6f40;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #a3e2a4;
+        }
+
+        /* 英雄横幅 / Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        /* 双语区块通用样式 / Section Styles */
+        section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2e6f40;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+        }
+
+        .section-title p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* 卡片布局 / Grid & Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #2e6f40;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #2e6f40;
+            margin-bottom: 15px;
+        }
+
+        .lang-en {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        .lang-zh {
+            color: #666;
+            font-size: 0.95rem;
+            border-top: 1px dashed #eee;
+            padding-top: 12px;
+        }
+
+        /* 行动呼吁 / Call to Action */
+        .cta {
+            background-color: #e2efe0;
+            text-align: center;
+            border-radius: 8px;
+            padding: 40px;
+        }
+
+        .cta h3 {
+            color: #2e6f40;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        /* 页脚 / Footer */
+        footer {
+            background-color: #1e3f24;
+            color: #a3e2a4;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        /* 响应式设计 / Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .nav-links a {
+                margin: 0 10px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">🌿 EcoLife / 绿色生活</div>
+            <nav class="nav-links">
+                <a href="#mission">Our Mission / 我们的使命</a>
+                <a href="#actions">What We Can Do / 我们能做什么</a>
+                <a href="#join">Join Us / 加入我们</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Protect Our Planet, Secure Our Future</h1>
+            <h1>保护我们的星球，捍卫我们的未来</h1>
+            <p style="margin-top: 15px;">"The Earth does not belong to us: we belong to the Earth."</p>
+            <p>"地球不属于我们，而我们属于地球。"</p>
+        </div>
+    </div>
+
+    <section id="mission" class="container">
+        <div class="section-title">
+            <h2>Our Mission / 我们的使命</h2>
+            <p>Why environmental protection matters to everyone / 为什么环境保护关乎每个人</p>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <h3>1. Climate Action / 气候行动</h3>
+                <p class="lang-en">Global temperatures are rising, leading to extreme weather. We must reduce carbon emissions to stabilize our climate.</p>
+                <p class="lang-zh">全球气温正在上升，导致极端天气频发。我们必须减少碳排放以稳定气候。</p>
+            </div>
+            <div class="card">
+                <h3>2. Biodiversity / Biodiversity / 生物多样性</h3>
+                <p class="lang-en">Millions of species are facing extinction. Protecting ecosystems ensures the balance of life on Earth.</p>
+                <p class="lang-zh">数以百万计的物种正面临灭绝。保护生态系统能确保地球生命的平衡。</p>
+            </div>
+            <div class="card">
+                <h3>3. Zero Waste / 零废物</h3>
+                <p class="lang-en">Plastic pollution suffocates our oceans and landfills. Shifting to a circular economy is no longer optional.</p>
+                <p class="lang-zh">塑料污染正使我们的海洋和填埋场窒息。转向循环经济已不再是一个选项，而是必然。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="actions" style="background-color: #fff;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Every Action Counts / 每一份行动都很重要</h2>
+                <p>Simple daily habits that can make a big difference / 改变世界的小小日常习惯</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Reduce, Reuse, Recycle</h3>
+                    <h3>减少、复用、回收</h3>
+                    <p class="lang-en">Minimize single-use plastics, choose reusable items, and separate waste correctly to give materials a second life.</p>
+                    <p class="lang-zh">减少使用一次性塑料，选择可重复使用的物品，并正确分类垃圾以赋予材料第二次生命。</p>
+                </div>
+                <div class="card">
+                    <h3>Save Energy & Water</h3>
+                    <h3>节约能源与水资源</h3>
+                    <p class="lang-en">Turn off lights when leaving a room, fix leaks, and choose energy-efficient appliances or public transport.</p>
+                    <p class="lang-zh">离开房间时关灯，修复漏水，选择节能电器或公共交通出行。</p>
+                </div>
+                <div class="card">
+                    <h3>Plant & Protect</h3>
+                    <h3>种植与保护</h3>
+                    <p class="lang-en">Support reforestation, grow local plants in your garden, and protect green spaces in your community.</p>
+                    <p class="lang-zh">支持植树造林，在花园中种植本地植物，并保护社区内的绿色空间。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="container">
+        <div class="cta">
+            <h3>Start Your Green Journey Today</h3>
+            <h3>今天就开启您的绿色旅程</h3>
+            <p class="lang-en" style="margin-bottom: 10px;">Change begins with you. Let's work together to leave a healthier planet for generations to come.</p>
+            <p class="lang-zh" style="margin-bottom: 20px;">改变始于自身。让我们携手努力，为子孙后代留下一个更健康的星球。</p>
+            <p style="font-weight: bold; color: #2e6f40;">Thank you for caring for our environment! / 感谢您对环境的关爱！</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 EcoLife. All Rights Reserved. / 版权所有</p>
+            <p style="font-size: 0.8rem; margin-top: 5px;">Built for a greener tomorrow / 为更绿色的明天而建</p>
+        </div>
+    </footer>
+
+</body>
+</html>
